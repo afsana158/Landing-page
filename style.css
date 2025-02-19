@@ -51,7 +51,6 @@ a{
     text-decoration: none;
 }
 
-
 html, body{
     scroll-behavior: smooth;
 }
@@ -117,13 +116,14 @@ nav{
     transition: 0.1s;
 }
 
-.nav_links a:hover{
-    color: var(--white);
-}
-
 #links{
     display: flex;
-    gap: 2rem; 
+    gap: 2rem;
+   
+}
+
+.nav_links a:hover{
+    color: var(--white);
 }
 
 .header_container{
@@ -168,7 +168,7 @@ nav{
 
 .about_content .description{
     margin-bottom: 2rem;
-    font-style: monospace;
+    font-style: inherit;
 }
 
 #Cv{
@@ -290,16 +290,17 @@ nav{
 
     .btn{
         display: flex;
-        padding: 0.25rem 0.25rem;
-        font-size: 1.0rem;
-        font-weight: 300;
+        font: inherit;
+        padding: 0.3rem 0.3rem;
+        font-size: 1.5rem;
+        font-weight: 250;
         color: var(--white);
-        background-image: var(--gradient-2);
+        background-image: var(--gradient-1);
         outline: none;
         border: none;
-        border-radius: 2rem;
+        border-radius: 6rem;
         cursor: pointer;
-        box-shadow: 5px 5px 10px rgb(0, 0, 0.2);
+        box-shadow: 3px 3px 8px rgb(0, 0, 0.2);
     }
 
     .header_container{
