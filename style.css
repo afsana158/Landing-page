@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fuggles&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:wght@400..700&family=Playwrite+AU+SA&family=Rubik+Vinyl&display=swap');
 
 :root{
-    --primary-color: #c66c27;
-    --secondary-color: #baa10f;
+    --primary-color: #a14a14;
+    --secondary-color: #803d13;
     --extra-light: #f3f4f6;
     --white: #ffffff;
-    --gradient-1: linear-gradient(to bottom right, #63500e, #181e41);
+    --gradient-1: linear-gradient(to bottom right, #8d4417, #181e41);
     --gradient-2: linear-gradient(
         to bottom,
         var(--primary-color),
@@ -42,19 +42,6 @@
     line-height: 1.75rem;
 }
 
-.contact_btn{
-    padding: 0rem 0rem;
-    font-size: 1.0rem;
-    font-weight: 250;
-    color: var(--white);
-    background-image: var(--gradient-2);
-    outline: none;
-    border: none;
-    border-radius: 2rem;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0.2);
-}
-
 img{
     width: 100%;
     display: flex;
@@ -64,16 +51,6 @@ a{
     text-decoration: none;
 }
 
-.logo{
-    display: inline;
-    padding: 10px 14px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--white);
-    background-image: var(--gradient-2);
-    border-radius: 100%;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0.2);
-}
 
 html, body{
     scroll-behavior: smooth;
@@ -102,11 +79,6 @@ nav{
     justify-content: space-between;
     gap: 2rem;
     background-image: var(--gradient-1);
-}
-
-.nav_logo{
-    padding: 9px 12px;
-    font-size: 1.2rem;
 }
 
 .nav_bar a{
@@ -149,8 +121,9 @@ nav{
     color: var(--white);
 }
 
-.btn{
-    display: none;
+#links{
+    display: flex;
+    gap: 2rem; 
 }
 
 .header_container{
@@ -180,6 +153,7 @@ nav{
 .headerImg img{
     max-width: 400px;
     margin-inline: auto;
+    border: 5px solid gainsboro;
     border-radius: 25rem;
 }
 
@@ -227,6 +201,12 @@ nav{
     text-align: justify;
 }
 
+.cerificate a:hover{
+    color: var(--secondary-color);
+    background: var(--gradient-2);
+    box-shadow: rgba(255, 255, 255, 0.1);
+}
+
 .internship_container{
     display: grid;
     gap: 1rem;
@@ -237,6 +217,12 @@ nav{
     gap: 1rem;
     color: white;
     text-align: justify;
+}
+
+.internship a:hover{
+    color: var(--secondary-color);
+    background: var(--gradient-2);
+    box-shadow: rgba(255, 255, 255, 0.1);
 }
 
 .contact_profiles{
@@ -296,7 +282,7 @@ nav{
     }
 
     .nav_links li:last-child{
-        display: none;
+        display: flex;
     }
     .nav_menu_button{
         display: none;
