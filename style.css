@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fuggles&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:wght@400..700&family=Playwrite+AU+SA&family=Rubik+Vinyl&display=swap');
 
 :root{
-    --primary-color: #16036c;
-    --secondary-color: #0a7383;
+    --primary-color: #d2cfdf;
+    --secondary-color: #2c2d2d;
     --extra-light: #f3f4f6;
     --white: #ffffff;
-    --gradient-1: linear-gradient(to bottom right, #1c59c2, #181e41);
-    --gradient-2: linear-gradient(
+    --gradient-1: linear-gradient(
         to bottom,
         var(--primary-color),
         var(--secondary-color)
@@ -58,11 +57,26 @@ html, body{
 body{
     font-family: "Lora", serif;
     color: var(--white);
-    background-image: var(--gradient-1);
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-
+.vdo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.vdo video{
+    object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .btn{
-    background-image: var(--gradient-2);
+    background-image: var(--gradient-1);
     font: inherit;
     padding: 0.3rem 0.3rem;
     font-size: 1.5rem;
@@ -73,6 +87,7 @@ body{
     border-radius: 6rem;
     cursor: pointer;
 }
+
 nav{
     position: fixed;
     isolation: isolate;
@@ -113,7 +128,7 @@ nav{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-image: var(--gradient-2);
+    background-image: var(--gradient-1);
     transform: translateY(-100%);
     transition: 0.5s;
     z-index: -1;
@@ -215,7 +230,7 @@ nav{
 
 .cerificate a:hover{
     color: var(--secondary-color);
-    background: var(--gradient-2);
+    background: var(--gradient-1);
     box-shadow: rgba(255, 255, 255, 0.1);
 }
 
@@ -233,7 +248,7 @@ nav{
 
 .internship a:hover{
     color: var(--secondary-color);
-    background: var(--gradient-2);
+    background: var(--gradient-1);
     box-shadow: rgba(255, 255, 255, 0.1);
 }
 
@@ -257,7 +272,7 @@ nav{
 }
 
 .contact_profiles a:hover{
-    background: var(--gradient-2);
+    background: var(--gradient-1);
     box-shadow: rgba(255, 255, 255, 0.1);
 }
 
@@ -307,7 +322,7 @@ nav{
         font-size: 1.5rem;
         font-weight: 250;
         color: var(--white);
-        background-image: var(--gradient-2);
+        background-image: var(--gradient-1);
         outline: none;
         border: none;
         border-radius: 6rem;
