@@ -252,6 +252,64 @@ nav{
     box-shadow: rgba(255, 255, 255, 0.1);
 }
 
+
+.dropdown :hover{
+    background: var(--gradient-2);
+    box-shadow: rgba(39, 142, 160, 0.1);
+}
+.arrow{
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    /* float: right; */
+}
+
+.arrow.rotate{
+    transform: rotate(180deg);
+}
+
+.options{
+    display: none;
+}
+
+.option {
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: var(--primary-color);
+}
+
+#text{
+    font-size: 18px;
+    color: #333;
+}
+
+.dropdown{
+    background: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font: inherit;
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: 250;
+    outline: none;
+    border: none;
+    line-height: normal;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+#c2 i{
+    margin-left: auto;
+}
 .contact_profiles{
     margin-top: 2rem;
     display: flex;
@@ -362,6 +420,20 @@ nav{
 
     .about_content, .about_content :is(.sec_header, .description){
         text-align: left;
+    }
+    .dropdown-content a {
+        font-size: 1.5rem;
+        padding: 12px;
+      }
+
+      .menu-button {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+
+      .close-btn {
+        font-size: 2.5rem;
+    border-right: 20px;
     }
 }
 
